@@ -14,7 +14,7 @@ body{
     width: 100%;
 }
 
-.container{
+.container-custom{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -394,6 +394,45 @@ body{
 .ext .info-text h2{
     font-size: 19px;
     color: #0f141b;
+}
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    animation: wtsAnimation 1s;
+  }
+
+  #whatsapp-button:hover {
+    background-color: #128C7E; /* Cor de destaque ao passar o mouse */
+    font-size: 32px;
+    box-shadow: 0 0 10px #128C7E;
+  }
+
+  #whatsapp-button i {
+    display: block;
+  }
+
+@keyframes wtsAnimation {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
 footer{
